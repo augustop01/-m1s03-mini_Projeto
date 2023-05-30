@@ -1,0 +1,99 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+    align-items: center;
+    background-color: #d2d2d2;
+    box-sizing: border-box;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 13.45rem;
+    width: 100%;
+}
+
+.logo {
+    height: 40px;
+}
+
+.menu__logo {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.menu__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__nav__item {
+    color: black;
+    font-weight: bold;
+    margin: 0 1.5rem;
+    text-decoration: none;
+}
+
+main {
+    margin: 0 13.45rem;    
+}
+
+.section__title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 2rem 0;
+}
+
+.cards__container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card {
+    align-items: center;
+    background-color: #d2d2d2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0.1rem;
+    padding: 1.5rem;
+    position: relative;
+    width: 16.875rem;
+    height: 29.5rem;
+}
+
+.card__img {
+    width: 16.575rem;
+    height: 16rem;
+}
+
+.card__info {
+    display: grid;
+    justify-items: center;
+}
+
+.card__like {
+    background-color: transparent;
+    border-style: none;
+    right: -115px;
+    top:-30px;
+    position: relative;
+    
+}
+
+.card__name {
+    font-weight: 600;
+}
+
+.card__value {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    margin-top: 2.5rem;
+}
+
+.card__add {
+    margin-top: 2.5rem;
+}
