@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini-projeto</title>
+    <title>Farmácia S3 - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,18 +12,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/cabecalho.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
   </head>
   <body>
     <header>
       <nav class="menu">
         <div class="menu__logo">
-          <img
-            src="assets/img/logo.svg"
-            class="logo"
-            alt="Logo da Farmácia S3"
-          />
-          <a>FARMACIA S3</a>
+          <a href="#" class="menu__title">
+            <img
+              src="assets/img/logo.svg"
+              class="logo"
+              alt="Logo da Farmácia S3"
+            />
+            FARMACIA S3</a
+          >
         </div>
         <div class="menu__nav">
           <a href="index.html" class="menu__nav__item">TODOS OS REMÉDIOS</a>
@@ -33,7 +36,7 @@
       </nav>
     </header>
     <main>
-        <h1 class="section__title">Todos os medicamentos</h1>
+      <h1 class="section__title">Todos os medicamentos</h1>
       <section class="cards__container">
         <article class="card">
           <img
@@ -48,48 +51,147 @@
           <span class="card__info">
             <h3 class="card__name">Dorflex</h3>
             <p class="card__value">R$XX,50</p>
-            <span class="card__add">
-                <button class="card__add__button">Adicionar</button>
-                <img src="" class="card__add__img" alt="" />
-            </span>
-        </span>
+            <button class="card__add__button">
+              <img
+                src="assets/img/add_plus.svg"
+                class="card__add__img"
+                alt="Ícone do Adicionar ao carrinho"
+              />Adicionar
+            </button>
+          </span>
         </article>
         <article class="card">
-            <img
-              src="assets/img/dipirona.jpg"
-              alt="Caixa do medicamento 
-                  Dorflex"
-              class="card__img"
-            />
-            <button class="card__like">
-              <img src="assets/img/like.svg" alt="" class="card__like__img" />
+          <img
+            src="assets/img/dipirona.jpg"
+            alt="Caixa do medicamento 
+                  Dipirona"
+            class="card__img"
+          />
+          <button class="card__like">
+            <img src="assets/img/like.svg" alt="" class="card__like__img" />
+          </button>
+          <span class="card__info">
+            <h3 class="card__name">Dipirona</h3>
+            <p class="card__value">R$XX,75</p>
+            <button class="card__add__button">
+              <img
+                src="assets/img/add_plus.svg"
+                class="card__add__img"
+                alt="Ícone do Adicionar ao carrinho"
+              />Adicionar
             </button>
-            <span class="card__info">
-              <h3 class="card__name">Dipirona</h3>
-              <p class="card__value">R$XX,75</p>
-              <span class="card__add">
-                  <button class="card__add__button">Adicionar</button>
-                  <img src="" class="card__add__img" alt="" />
-              </span>
           </span>
-        </span>
-    </article>
-    <article class="card">
-        <img
-          src="assets/img/omeoprazol.png"
-          alt="Caixa do medicamento 
-              Dorflex"
-          class="card__img"
-        />
-        <button class="card__like">
-          <img src="assets/img/like.svg" alt="" class="card__like__img" />
-        </button>
-        <article class="card__info">
-          <h3 class="card__name">Omeoprazol</h3>
-          <p class="card__value">R$XX,50</p>
-          <span class="card__add">
-              <button class="card__add__button">Adicionar</button>
-              <img src="" class="card__add__img" alt="" />
+        </article>
+        <article class="card">
+          <img
+            src="assets/img/omeoprazol.png"
+            alt="Caixa do medicamento 
+              Omeoprazol"
+            class="card__img"
+          />
+          <button class="card__like">
+            <img src="assets/img/like.svg" alt="" class="card__like__img" />
+          </button>
+          <span class="card__info">
+            <h3 class="card__name">Omeoprazol</h3>
+            <p class="card__value">R$XX,50</p>
+
+            <button class="card__add__button">
+              <img
+                src="assets/img/add_plus.svg"
+                class="card__add__img"
+                alt="Ícone do Adicionar ao carrinho"
+              />Adicionar
+            </button>
+          </span>
+        </article>
+        <article class="card">
+          <img
+            src="assets/img/sonrisal.jpg"
+            alt="Caixa do medicamento 
+              Sonrisal"
+            class="card__img"
+          />
+          <button class="card__like">
+            <img src="assets/img/like.svg" alt="" class="card__like__img" />
+          </button>
+          <span class="card__info">
+            <h3 class="card__name">Sonrisal</h3>
+            <p class="card__value">R$XX,30</p>
+
+            <button class="card__add__button">
+              <img
+                src="assets/img/add_plus.svg"
+                class="card__add__img"
+                alt="Ícone do Adicionar ao carrinho"
+              />Adicionar
+            </button>
+          </span>
+        </article>
+        <article class="card">
+          <img
+            src="assets/img/doril.jpg"
+            alt="Caixa do medicamento 
+              Doril"
+            class="card__img"
+          />
+          <button class="card__like">
+            <img src="assets/img/like.svg" alt="" class="card__like__img" />
+          </button>
+          <span class="card__info">
+            <h3 class="card__name">Doril</h3>
+            <p class="card__value">R$XX,90</p>
+            <button class="card__add__button">
+              <img
+                src="assets/img/add_plus.svg"
+                class="card__add__img"
+                alt="Ícone do Adicionar ao carrinho"
+              />Adicionar
+            </button>
+          </span>
+        </article>
+        <article class="card">
+          <img
+            src="assets/img/benegripe.jpg"
+            alt="Caixa do medicamento 
+              Benegripe"
+            class="card__img"
+          />
+          <button class="card__like">
+            <img src="assets/img/like.svg" alt="" class="card__like__img" />
+          </button>
+          <span class="card__info">
+            <h3 class="card__name">Benegripe</h3>
+            <p class="card__value">R$XX,50</p>
+            <button class="card__add__button">
+              <img
+                src="assets/img/add_plus.svg"
+                class="card__add__img"
+                alt="Ícone do Adicionar ao carrinho"
+              />Adicionar
+            </button>
+          </span>
+        </article>
+        <article class="card">
+          <img
+            src="assets/img/lisador.jpg"
+            alt="Caixa do medicamento 
+              Lisador"
+            class="card__img"
+          />
+          <button class="card__like">
+            <img src="assets/img/like.svg" alt="" class="card__like__img" />
+          </button>
+          <span class="card__info">
+            <h3 class="card__name">Lisador</h3>
+            <p class="card__value">R$XX,25</p>
+            <button class="card__add__button">
+              <img
+                src="assets/img/add_plus.svg"
+                class="card__add__img"
+                alt="Ícone do Adicionar ao carrinho"
+              />Adicionar
+            </button>
           </span>
         </article>
       </section>

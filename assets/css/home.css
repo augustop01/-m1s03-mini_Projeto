@@ -1,0 +1,110 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    margin: 0 13.45rem;    
+}
+
+.section__title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 2rem 0;
+}
+
+.cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    align-items: center;
+    background-color: #d2d2d2;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.75rem 0.7rem;
+    padding: 1.5rem;
+    position: relative;
+    max-width: 15.35rem;
+}
+
+.card:hover {
+    background-color: #e0e0e0;
+    /* top: -5px; */
+}
+
+.card:hover .card__name {
+    color: rgb(0, 128, 0);
+}
+
+.card:hover .card__value {
+    color: rgb(203, 0, 0);
+}
+
+.card__img {
+    width: 14rem;
+    height: 14rem;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    width: 100%;
+}
+
+.card__info > * {
+    margin-top: 1.5rem
+}
+
+.card__like {
+    background-color: transparent;
+    border-style: none;
+    fill: green;
+    right: 0.5rem;
+    top: 14rem;
+    position: absolute;
+    
+}
+
+.card__like:hover {
+    cursor: pointer;
+}
+
+.card__name {
+    color: rgb(32, 67, 32);
+    font-weight: 600;
+}
+
+.card__value {
+    color: rgb(103, 32, 32);
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+    
+.card__add__button {
+    background-color: green;
+    border-radius: 0.25rem;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    height: 2rem;
+    width: 100%;
+}
+
+.card__add__button:hover {
+    background-color: rgb(6, 167, 0);
+    cursor: pointer;
+}
+
+.card__add__img {
+    position: absolute;
+    bottom: 2.01rem;
+    left: 2.5rem;
+}

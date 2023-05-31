@@ -1,0 +1,48 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.menu {
+    align-items: center;
+    background-color: #d2d2d2;
+    box-sizing: border-box;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 13.45rem;
+    width: 100%;
+}
+
+.logo {
+    height: 40px;
+}
+
+.menu__logo {
+    box-sizing: border-box;
+    font-weight: bold;
+    padding: 0.25rem;
+}
+
+.menu__title {
+    align-items: center;
+    color: rgb(0, 104, 31);
+    display: flex;
+    text-decoration: none;
+}
+
+.menu__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__nav__item {
+    color: rgb(81, 81, 81);
+    font-weight: bold;
+    margin: 0 1.5rem;
+    text-decoration: none;
+}
+
+.menu__nav__item:hover {
+    color: rgb(0, 140, 0);
+}
