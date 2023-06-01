@@ -41,6 +41,10 @@ h1 {
     padding: 0 1rem;
 }
 
+.text__input:hover {
+    background-color: white;
+}
+
 .text__input:focus {
     border-style: none;
     background-color: rgb(233, 255, 233);
@@ -76,6 +80,10 @@ h1 {
 .checkbox__label {
     font-weight: 500;
     margin-left: 0.25rem;
+}
+
+.checkbox__label:hover {
+    color: black;
 }
 
 .checkbox {

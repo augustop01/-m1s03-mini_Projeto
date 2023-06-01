@@ -64,13 +64,28 @@ main {
 }
 
 .card__like {
-    background-color: transparent;
-    border-style: none;
-    fill: green;
-    right: 0.5rem;
-    top: 14rem;
+    right: 1rem;
+    text-align: center;
+    top: 13.8rem;
     position: absolute;
-    
+}
+
+.card__heart {
+    display: flex;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color:#747474;
+    transition: background-color 0.3s ease;
+}
+
+.card__heart:hover {
+    color: rgb(13, 159, 0);
+    scale: 1.2;
+}
+
+.card__heart:active {
+    color: rgb(255, 0, 0);
+    scale: 1;
 }
 
 .card__like:hover {

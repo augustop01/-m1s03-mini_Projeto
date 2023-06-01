@@ -49,13 +49,16 @@ body {
 
 .menu__nav__item {
     color: rgb(81, 81, 81);
+    display: flex;
     font-weight: bold;
     margin: 0 1.5rem;
+    transition: 0.05s;
     text-decoration: none;
 }
 
 .menu__nav__item:hover {
     color: rgb(0, 140, 0);
+    scale: 1.05;
 }
 
 .menu__nav__item:active {
