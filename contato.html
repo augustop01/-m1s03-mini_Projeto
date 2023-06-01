@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farmácia S3 - Fale conosco</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/cabecalho.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/contato.css " />
+  </head>
+  <body>
     <header>
-        <nav class="menu">
-          <div class="menu__logo">
-            <a href="#" class="menu__title">
-              <img
-                src="assets/img/logo.svg"
-                class="logo"
-                alt="Logo da Farmácia S3"
-              />
-              FARMACIA S3</a
-            >
-          </div>
-          <div class="menu__nav">
-            <a href="index.html" class="menu__nav__item">TODOS OS REMÉDIOS</a>
-            <a href="#" class="menu__nav__item">SOBRE NÓS</a>
-            <a href="contato.html" class="menu__nav__item">FALE CONOSCO</a>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <h1>Formulário de Contato</h1>
-        <form>
-            label+input
-        </form>
-      </main>
-</body>
+      <nav class="menu">
+        <div class="menu__logo">
+          <a href="index.html" class="menu__title">
+            <img
+              src="assets/img/logo.svg"
+              class="logo"
+              alt="Logo da Farmácia S3"
+            />
+            <div class="menu__title__text">
+            FARMÁCIA
+            <p>S3</p>
+            </div>
+            </a
+          >
+        </div>
+        <div class="menu__nav">
+          <a href="index.html" class="menu__nav__item">TODOS OS REMÉDIOS</a>
+          <a href="#" class="menu__nav__item">SOBRE NÓS</a>
+          <a href="contato.html" class="menu__nav__item">FALE CONOSCO</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Formulário de Contato</h1>
+      <form class="form__container">
+        <label for="nome" class="label">Nome</label>
+        <input type="text" id="nome" name="nome" class="text__input" placeholder="Informe seu nome" autofocus/>
+        <label for="tel" class="label">Telefone para contato</label>
+        <input type="tel" id="tel" name="tel" class="text__input" placeholder="(DDD)00000-0000"/>
+        <label for="email" class="label">E-mail</label>
+        <input type="email" id="email" name="email" class="text__input" placeholder="Informe seu e-mail"/>
+        <label for="assunto" class="label">Assunto</label>
+        <select id="assunto" name="assunto" class="text__input select__input">
+          <option disabled selected value hidden class="select__option"> Escolha o assunto que quer tratar </option>
+          <option value="" class="select__option">Comercial</option>
+          <option value="" class="select__option">Dúvidas</option>
+          <option value="" class="select__option">Revenda</option>
+        </select>
+        <label for="mensagem" class="label">Sua mensagem</label>
+        <textarea name="mensagem" id="mensagem" class="text__input area__input" placeholder="Digite sua mensagem..."></textarea>
+        <div class="checkbox__container">
+          <input type="checkbox" name="orcamento" id="orcamento" class="checkbox">
+          <label for="orcamento" class="checkbox__label">Essa é uma mensagem sobre orçamento</label>
+        </div>
+        <input type="submit" class="form__submit"/>
+      </form>
+    </main>
+  </body>
 </html>

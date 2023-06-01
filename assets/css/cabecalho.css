@@ -5,8 +5,9 @@ body {
 
 .menu {
     align-items: center;
-    background-color: #d2d2d2;
+    background-color: #F7F7F7;
     box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: flex;
     height: 80px;
     justify-content: space-between;
@@ -26,9 +27,19 @@ body {
 
 .menu__title {
     align-items: center;
-    color: rgb(0, 104, 31);
+    color: rgb(0, 136, 41);
     display: flex;
     text-decoration: none;
+}
+
+.menu__title__text {
+    margin-left: 0.25rem;
+    text-align: center;
+}
+
+.menu__title p {
+    margin-left: 0.25rem;
+    color: red;
 }
 
 .menu__nav {
@@ -45,4 +56,8 @@ body {
 
 .menu__nav__item:hover {
     color: rgb(0, 140, 0);
+}
+
+.menu__nav__item:active {
+    color: rgb(219, 0, 0);
 }

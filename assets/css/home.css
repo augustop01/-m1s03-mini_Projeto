@@ -20,7 +20,7 @@ main {
 
 .card {
     align-items: center;
-    background-color: #d2d2d2;
+    background-color: #e9e9e9;
     box-sizing: border-box;
     border-radius: 0.3rem;
     display: flex;
@@ -33,7 +33,7 @@ main {
 }
 
 .card:hover {
-    background-color: #e0e0e0;
+    background-color: #d2d2d2;
     /* top: -5px; */
 }
 
@@ -101,6 +101,10 @@ main {
 .card__add__button:hover {
     background-color: rgb(6, 167, 0);
     cursor: pointer;
+}
+
+.card__add__button:active {
+    background-color: rgb(167, 0, 0);
 }
 
 .card__add__img {
