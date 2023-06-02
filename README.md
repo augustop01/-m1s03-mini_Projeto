@@ -17,9 +17,9 @@ O Farmácia S3 possui as seguintes funcionalidades:
 
 O projeto Farmácia S3 utiliza as seguintes linguagens e tecnologias:
 
-🌐 **HTML:** Linguagem de marcação utilizada para estruturar o conteúdo da página.
-🎨 **CSS:** Linguagem de estilo utilizada para definir a aparência e o layout da página.
-🖼️ **Remix Icon:** Biblioteca de ícones que fornece uma ampla variedade de ícones prontos para uso na interface.
+- **HTML:** Linguagem de marcação utilizada para estruturar o conteúdo da página.
+- **CSS:** Linguagem de estilo utilizada para definir a aparência e o layout da página.
+- **Remix Icon:** Biblioteca de ícones que fornece uma ampla variedade de ícones prontos para uso na interface.
 
 📁 **Estrutura do Projeto**
 
