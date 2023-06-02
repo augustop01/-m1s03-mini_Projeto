@@ -1,6 +1,6 @@
-# -m1s03-mini_Projeto
+# farmacia_S3
 
-📚 **[mini-Projeto] Projeto Farmácia S3**
+📚 **[mini-Projeto] Farmácia S3**
 
 O Farmácia S3 é um projeto de exemplo desenvolvido com o objetivo de aprimorar e qualificar habilidades próprias, seguindo o cronograma e requisitos do programa DEVinHouse. Trata-se de uma página web que simula uma farmácia fictícia, utilizando as linguagens HTML e CSS, juntamente com a biblioteca Remix Icon.
 
