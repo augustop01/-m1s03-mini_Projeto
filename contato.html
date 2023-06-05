@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/cabecalho.css" />
+    <link rel="stylesheet" href="assets/css/rodape.css" />
     <link rel="stylesheet" href="assets/css/contato.css " />
   </head>
   <body>
@@ -30,8 +31,9 @@
           >
         </div>
         <div class="menu__nav">
-          <a href="index.html" class="menu__nav__item">TODOS OS REMÉDIOS</a>
-          <a href="#" class="menu__nav__item">SOBRE NÓS</a>
+          <a href="index.html" class="menu__nav__item">INÍCIO</a>
+          <a href="medicamentos.html" class="menu__nav__item">TODOS OS REMÉDIOS</a>
+          <a href="sobreNos.html" class="menu__nav__item">SOBRE NÓS</a>
           <a href="contato.html" class="menu__nav__item">FALE CONOSCO</a>
         </div>
       </nav>
@@ -40,20 +42,20 @@
       <h1>Formulário de Contato</h1>
       <form class="form__container">
         <label for="nome" class="label">Nome</label>
-        <input type="text" id="nome" name="nome" class="text__input" placeholder="Informe seu nome" autofocus/>
+        <input type="text" id="nome" name="nome" class="text__input" placeholder="Informe seu nome" autofocus required/>
         <label for="tel" class="label">Telefone para contato</label>
-        <input type="tel" id="tel" name="tel" class="text__input" placeholder="(DDD)00000-0000"/>
+        <input type="tel" id="tel" name="tel" class="text__input" placeholder="(DDD)00000-0000" required/>
         <label for="email" class="label">E-mail</label>
-        <input type="email" id="email" name="email" class="text__input" placeholder="Informe seu e-mail"/>
+        <input type="email" id="email" name="email" class="text__input" placeholder="Informe seu e-mail" required/>
         <label for="assunto" class="label">Assunto</label>
-        <select id="assunto" name="assunto" class="text__input select__input">
+        <select id="assunto" name="assunto" class="text__input select__input" required>
           <option disabled selected value hidden class="select__option"> Escolha o assunto que quer tratar </option>
           <option value="" class="select__option">Comercial</option>
           <option value="" class="select__option">Dúvidas</option>
           <option value="" class="select__option">Revenda</option>
         </select>
         <label for="mensagem" class="label">Sua mensagem</label>
-        <textarea name="mensagem" id="mensagem" class="text__input area__input" placeholder="Digite sua mensagem..."></textarea>
+        <textarea name="mensagem" id="mensagem" class="text__input area__input" placeholder="Digite sua mensagem..." required></textarea>
         <div class="checkbox__container">
           <input type="checkbox" name="orcamento" id="orcamento" class="checkbox">
           <label for="orcamento" class="checkbox__label">Essa é uma mensagem sobre orçamento</label>
@@ -61,5 +63,14 @@
         <input type="submit" class="form__submit"/>
       </form>
     </main>
+    <footer class="rodape">
+      <section class="rodape__map">
+      <h3>Nossa localização</h3>
+      <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=pt-BR&amp;q=Time Square, West 45th Street, Nova Iorque, NY, EUA&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+      </section>
+      <section class="rodape__copyright">
+      <p>Site desenvolvido por Augusto Pires; sem fins comerciais. Junho de 2023.</p>
+      </section>
+  </footer>
   </body>
 </html>

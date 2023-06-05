@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(196, 196, 196) 100%);
+}
+
+.sobre__container {
+    margin: 4.3rem 21rem 0rem 21rem;
+}
+
+.greet__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre__container h1 {
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sobre__container p {
+    margin-top: 1rem;
+}
+
+.sobre__container p:last-of-type {
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.sobre__img {
+    align-self: center;
+    border-radius: 10px;
+    margin: 3rem 0 2rem 0;
+}
+
+.social-media__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.social-media__container a {
+    margin: 0 2rem;
+    text-decoration: none;
+}
+
+.media_icon {
+    display: block;
+    color: rgb(75, 75, 75);
+    font-size: 3rem;
+}
+
+.media_icon:hover {
+    color: green;
+    scale: 1.1;
+}
+
+.fb_icon:active {
+    color: blue;
+    scale: 1;
+}
+
+.insta_icon:active {
+    background: -webkit-linear-gradient(210deg, rgba(14,0,255,1) 0%, rgba(226,0,255,1) 47%, rgba(254,255,122,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    scale: 1;
+}
+
+.wpp_icon:active {
+    color: rgb(3, 209, 0);
+    scale: 1;
+}
