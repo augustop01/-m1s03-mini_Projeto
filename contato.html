@@ -8,39 +8,92 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/cabecalho.css" />
     <link rel="stylesheet" href="assets/css/rodape.css" />
     <link rel="stylesheet" href="assets/css/contato.css " />
   </head>
   <body>
-    <header>
-      <nav class="menu">
-        <div class="menu__logo">
-          <a href="index.html" class="menu__title">
-            <img
-              src="assets/img/logo.svg"
-              class="logo"
-              alt="Logo da Farmácia S3"
-            />
-            <div class="menu__title__text">
-            FARMÁCIA
-            <p>S3</p>
+      <!--     -----     -->
+      <!-- HEADER INÍCIO -->
+      <!--     -----     -->
+      <header>
+        <nav class="menu container-fluid py-2">
+          <div class="row justify-content-between mx-5">
+            <div class="menu__logo col-2 d-flex justify-content-center">
+              <a href="index.html" class="menu__title d-flex flex-column justify-content-center">
+                <img
+                  src="assets/img/logo.svg"
+                  class="logo mx-auto"
+                  alt="Logo da Farmácia S3"
+                />
+                <div class="menu__title__text text-center">
+                  FARMÁCIA
+                  <p>S3</p>
+                </div>
+              </a>
             </div>
-            </a
-          >
-        </div>
-        <div class="menu__nav">
-          <a href="index.html" class="menu__nav__item">INÍCIO</a>
-          <a href="medicamentos.html" class="menu__nav__item">TODOS OS REMÉDIOS</a>
-          <a href="sobreNos.html" class="menu__nav__item">SOBRE NÓS</a>
-          <a href="contato.html" class="menu__nav__item">FALE CONOSCO</a>
-        </div>
-      </nav>
-    </header>
+            <div class="menu__nav col-9 d-flex justify-content-around align-items-center">
+              <a href="index.html" class="menu__nav__item">INÍCIO</a>
+              <a href="medicamentos.html" class="menu__nav__item"
+                >TODOS OS REMÉDIOS</a
+              >
+              <a href="sobreNos.html" class="menu__nav__item">SOBRE NÓS</a>
+              <a href="contato.html" class="menu__nav__item">FALE CONOSCO</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--     -----     -->
+      <!--   HEADER FIM  -->
+      <!--     -----     -->
     <main>
       <h1>Formulário de Contato</h1>
-      <form class="form__container">
+      <!--     -----     -->
+      <!--   FORM COMEÇO -->
+      <!--     -----     -->
+    <div class="primary-container">
+      <form class="form-container">
+        <div class="form-group">
+          <label for="nome" class="label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Informe seu nome">
+        </div>
+        <div class="form-group">
+          <label for="telefone" class="label">Telefone para contato</label>
+          <input type="tel" class="form-control" id="telefone" placeholder="(DDD)00000-0000">
+        </div>
+        <div class="form-group">
+          <label for="email" class="label">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="exemplo@email.com">
+        </div>
+        <div class="form-group">
+          <label for="assunto" class="label">Assunto</label>
+          <select class="form-control select-input" id="assunto">
+            <option disabled selected value hidden >Escolha o assunto que quer tratar</option>
+            <option>Comercial</option>
+            <option>Dúvidas</option>
+            <option>Revenda</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensagem" class="label">Sua mensagem</label>
+          <textarea class="form-control area-input" id="mensagem" rows="4" placeholder="Digite sua mensagem..."></textarea>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="mensagem-sobre">
+          <label class="form-check-label" for="mensagem-sobre" class="label">
+            Essa é uma mensagem sobre orçamento
+          </label>
+        </div>
+        <button class="btn btn-success">Enviar</button>
+      </form>
+    </div>
+
+      <!--     -----     -->
+      <!--    FORM FIM   -->
+      <!--     -----     -->
+      <!-- <form class="form-container">
         <label for="nome" class="label">Nome</label>
         <input type="text" id="nome" name="nome" class="text__input" placeholder="Informe seu nome" autofocus required/>
         <label for="tel" class="label">Telefone para contato</label>
@@ -61,7 +114,7 @@
           <label for="orcamento" class="checkbox__label">Essa é uma mensagem sobre orçamento</label>
         </div>
         <input type="submit" class="form__submit"/>
-      </form>
+      </form> -->
     </main>
     <footer class="rodape">
       <section class="rodape__map">
@@ -72,5 +125,7 @@
       <p>Site desenvolvido por Augusto Pires; sem fins comerciais. Junho de 2023.</p>
       </section>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,5 +1,7 @@
 main {
-    margin: 0 32.2rem;
+    display: grid;
+    justify-content: center;
+    width: 100%;
 }
 
 h1 {
@@ -8,13 +10,23 @@ h1 {
     font-weight: 900;
 }
 
-.form__container {
+/* .primary-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+} */
+
+.form-container {
     background-color: rgb(216, 215, 215);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
     padding: 0 2rem 1.5rem 2rem;
+    min-width: 35rem;
+    max-width: 40rem;
 }
 
 /* .form__container label:not(:first-child) {
@@ -27,7 +39,7 @@ h1 {
     margin: 1.5rem 0 0.5rem 0;
 }
 
-.text__input {  
+.form-control {  
     background-color: rgb(244, 244, 244);
     border-radius: 4px;
     border-style: none;
@@ -41,28 +53,28 @@ h1 {
     padding: 0 1rem;
 }
 
-.text__input:hover {
+.form-control:hover {
     background-color: white;
 }
 
-.text__input:focus {
+.form-control:focus {
     border-style: none;
     background-color: rgb(233, 255, 233);
 }
 
-.text__input::placeholder {
+.form-control::placeholder {
     color: rgb(173, 173, 173);
 }
 
-.text__input:focus::placeholder {
+.form-control:focus::placeholder {
     color: rgb(139, 188, 132);
 }
 
-.select__input:checked {
+.select-input:checked {
     color: rgb(123, 123, 123);
 }
 
-.area__input {
+.area-input {
     height: 7rem;
     min-height: 3rem;
     max-width: 100%;
@@ -70,43 +82,30 @@ h1 {
     padding: 0.75rem 1rem;
 }
 
-.checkbox__container {
-    align-items: center;
+.form-check {
     display: flex;
     color: rgb(109, 109, 109);
     margin-top: 0.5rem;
 }
 
-.checkbox__label {
+.form-check-label {
     font-weight: 500;
-    margin-left: 0.25rem;
 }
 
-.checkbox__label:hover {
+.form-check-label:hover {
     color: black;
 }
 
-.checkbox {
+.form-check-input {
     border-style: none;
+    bottom: 0.05rem;
+    left: 1.35rem;
 }
 
-.form__submit {
+.btn-success {
     align-self: center;
-    background-color: green;
     border-radius: 0.25rem;
-    border-style: none;
-    color: white;
     font-weight: bold;
-    height: 2rem;
     margin-top: 1.5rem;
     width: 10rem;
-}
-
-.form__submit:hover {
-    background-color: rgb(6, 167, 0);
-    cursor: pointer;
-}
-
-.form__submit:active {
-    background-color: rgb(167, 0, 0);
 }
