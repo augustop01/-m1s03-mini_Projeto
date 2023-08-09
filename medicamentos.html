@@ -24,27 +24,11 @@
       <!--     -----     -->
       <header>
         <nav class="menu container-fluid py-2">
-          <div class="row justify-content-between mx-5 py-1">
-            <div class="menu__logo col-2 d-flex justify-content-center">
-              <a href="index.html" class="menu__title d-flex flex-column justify-content-center">
-                <img
-                  src="assets/img/logo.svg"
-                  class="logo mx-auto"
-                  alt="Logo da Farmácia S3"
-                />
-                <div class="menu__title__text text-center">
-                  FARMÁCIA
-                  <p>S3</p>
-                </div>
+          <div class="row menu-container d-flex justify-content-around mx-4 py-1">
+              <a href="index.html" class="menu__title d-flex flex-column justify-content-center" id="logo-anchor">
               </a>
-            </div>
-            <div class="menu__nav col-9 d-flex justify-content-around align-items-center">
-              <a href="index.html" class="menu__nav__item">INÍCIO</a>
-              <a href="medicamentos.html" class="menu__nav__item"
-                >TODOS OS REMÉDIOS</a
-              >
-              <a href="sobreNos.html" class="menu__nav__item">SOBRE NÓS</a>
-              <a href="contato.html" class="menu__nav__item">FALE CONOSCO</a>
+            <ul class="menu-nav d-flex justify-content-around align-items-center">
+              </ul>
             </div>
           </div>
         </nav>
@@ -185,169 +169,6 @@
                         </button>
                       </div>
                     </div>
-      <!-- 
-        -
-        -
-        -
-      -->
-      <!-- <section class="cards__container">
-        <article class="card">
-          <img
-            src="assets/img/dorflex.png"
-            alt="Caixa do medicamento 
-                Dorflex"
-            class="card__img"
-          />
-          <div class="card__like">
-            <i class="ri-heart-fill card__heart"></i>
-          </div>
-          <span class="card__info">
-            <h3 class="card__name">Dorflex</h3>
-            <p class="card__value">R$XX,50</p>
-            <button class="card__add__button">
-              <img
-                src="assets/img/add_plus.svg"
-                class="card__add__img"
-                alt="Ícone do Adicionar ao carrinho"
-              />Adicionar
-            </button>
-          </span>
-        </article>
-        <article class="card">
-          <img
-            src="assets/img/dipirona.jpg"
-            alt="Caixa do medicamento 
-                  Dipirona"
-            class="card__img"
-          />
-          <div class="card__like">
-            <i class="ri-heart-fill card__heart"></i>
-          </div>
-          <span class="card__info">
-            <h3 class="card__name">Dipirona</h3>
-            <p class="card__value">R$XX,75</p>
-            <button class="card__add__button">
-              <img
-                src="assets/img/add_plus.svg"
-                class="card__add__img"
-                alt="Ícone do Adicionar ao carrinho"
-              />Adicionar
-            </button>
-          </span>
-        </article>
-        <article class="card">
-          <img
-            src="assets/img/omeoprazol.png"
-            alt="Caixa do medicamento 
-              Omeprazol"
-            class="card__img"
-          />
-          <div class="card__like">
-            <i class="ri-heart-fill card__heart"></i>
-          </div>
-          <span class="card__info">
-            <h3 class="card__name">Omeprazol</h3>
-            <p class="card__value">R$XX,50</p>
-
-            <button class="card__add__button">
-              <img
-                src="assets/img/add_plus.svg"
-                class="card__add__img"
-                alt="Ícone do Adicionar ao carrinho"
-              />Adicionar
-            </button>
-          </span>
-        </article>
-        <article class="card">
-          <img
-            src="assets/img/sonrisal.jpg"
-            alt="Caixa do medicamento 
-              Sonrisal"
-            class="card__img"
-          />
-          <div class="card__like">
-            <i class="ri-heart-fill card__heart"></i>
-          </div>
-          <span class="card__info">
-            <h3 class="card__name">Sonrisal</h3>
-            <p class="card__value">R$XX,30</p>
-
-            <button class="card__add__button">
-              <img
-                src="assets/img/add_plus.svg"
-                class="card__add__img"
-                alt="Ícone do Adicionar ao carrinho"
-              />Adicionar
-            </button>
-          </span>
-        </article>
-        <article class="card">
-          <img
-            src="assets/img/doril.jpg"
-            alt="Caixa do medicamento 
-              Doril"
-            class="card__img"
-          />
-          <div class="card__like">
-            <i class="ri-heart-fill card__heart"></i>
-          </div>
-          <span class="card__info">
-            <h3 class="card__name">Doril</h3>
-            <p class="card__value">R$XX,90</p>
-            <button class="card__add__button">
-              <img
-                src="assets/img/add_plus.svg"
-                class="card__add__img"
-                alt="Ícone do Adicionar ao carrinho"
-              />Adicionar
-            </button>
-          </span>
-        </article>
-        <article class="card">
-          <img
-            src="assets/img/benegripe.jpg"
-            alt="Caixa do medicamento 
-              Benegripe"
-            class="card__img"
-          />
-          <div class="card__like">
-            <i class="ri-heart-fill card__heart"></i>
-          </div>
-          <span class="card__info">
-            <h3 class="card__name">Benegripe</h3>
-            <p class="card__value">R$XX,50</p>
-            <button class="card__add__button">
-              <img
-                src="assets/img/add_plus.svg"
-                class="card__add__img"
-                alt="Ícone do Adicionar ao carrinho"
-              />Adicionar
-            </button>
-          </span>
-        </article>
-        <article class="card">
-          <img
-            src="assets/img/lisador.jpg"
-            alt="Caixa do medicamento 
-              Lisador"
-            class="card__img"
-          />
-          <div class="card__like">
-            <i class="ri-heart-fill card__heart"></i>
-          </div>
-          <span class="card__info">
-            <h3 class="card__name">Lisador</h3>
-            <p class="card__value">R$XX,25</p>
-            <button class="card__add__button">
-              <img
-                src="assets/img/add_plus.svg"
-                class="card__add__img"
-                alt="Ícone do Adicionar ao carrinho"
-              />Adicionar
-            </button>
-          </span>
-        </article>
-      </section> -->
     </main>
     <footer class="rodape">
       <section class="rodape__map">
@@ -358,6 +179,7 @@
       <p>Site desenvolvido por Augusto Pires; sem fins comerciais. Junho de 2023.</p>
       </section>
   </footer>
+  <script src="./assets/js/header.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   </body>
