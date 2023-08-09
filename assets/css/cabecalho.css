@@ -1,6 +1,5 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    position: sticky;
 }
 
 nav a p {
@@ -23,10 +22,29 @@ nav a p {
     
 }
 
+.header {
+    display: flex !important;
+    position: sticky !important;
+}
+/* #328b47 */
 .menu {
-    background-color: #4eb165;
+    background: rgb(30,83,42);
+    background: linear-gradient(90deg, rgba(30,83,42,1) 0%, rgba(50,139,71,1) 40%, rgba(43,173,74,1) 50%, rgba(50,139,71,1) 60%, rgba(30,83,42,1) 100%);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     font-weight: bold;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.menu-container {
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.mx-4 {
+    margin: 0 5rem !important;
 }
 
 .logo {
@@ -42,6 +60,7 @@ nav a p {
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: 0.1s;
+    padding: 0.5rem 0;
 }
 
 .menu__title:hover {
@@ -59,24 +78,42 @@ nav a p {
     /* margin-left: 0.25rem; */
     color: red;
 }
-/* 
-.menu__nav {
-    display: flex;
-    justify-content: center;
+
+/* .menu__nav {
+    min-width: 760px;
 } */
 
-.menu__nav__item {
+.menu-nav {
+    box-sizing: border-box !important;
+}
+
+.menu-nav li {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    transition: 0.15s;
+    padding: 0 2.5rem;
+}
+
+.menu-nav li:hover {
+    background-color: rgb(15, 40, 21, 0.25);
+    transition: 0.25s;
+    height: 100%;
+}
+
+.menu-nav-item {
     color: rgb(220, 253, 210);
     transition: 0.05s;
     text-decoration: none;
+
 }
 
-.menu__nav__item:hover {
+.menu-nav-item:hover {
     color: rgb(248, 248, 248);
     text-decoration: none;
     scale: 1.05;
 }
 
-.menu__nav__item:active {
+.menu-nav-item:active {
     color: rgb(219, 0, 0);
 }
