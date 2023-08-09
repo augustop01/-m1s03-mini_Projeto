@@ -1,23 +1,3 @@
-/*
-<div class="card">
-          <img src="./assets/img/dorflex.png" class="card-img-top" alt="...">
-          <div class="card-like">
-            <i class="ri-heart-fill card-heart"></i>
-          </div>
-          <div class="card-body text-center">
-            <p class="card-title font-weight-bold pb-3">Dorflex</p>
-            <p class="card-text pb-4">R$XX,50</p>
-            <button type="button" class="btn btn-lg btn-success"><img
-              src="assets/img/add_plus.svg"
-              class="card-plus-sign"
-              alt="Ícone do Adicionar ao carrinho"
-              />
-            Adicionar
-            </button>
-          </div>
-        </div>
-*/
-//---------------------------------------------------
 let medicamentos = [
 {
 nome:"Dorflex",
