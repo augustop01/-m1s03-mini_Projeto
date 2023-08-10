@@ -1,54 +1,9 @@
-let medicamentos = [
-{
-nome:"Dorflex",
-preco:"R$XX,50",
-img:"./assets/img/dorflex.png",
-alt:"Representação da caixa do medicamento Dorflex.",
-top: true
-},
-{
-nome:"Benegripe",
-preco:"R$XX,25",
-img:"./assets/img/benegripe.jpg",
-alt:"Representação da caixa do medicamento Benegripe.",
-top: true
-},
-{
-nome:"Dipirona",
-preco:"R$XX,00",
-img:"./assets/img/dipirona.jpg",
-alt:"Representação da caixa do medicamento Dipirona.",
-top: true
-},
-{
-nome:"Doril",
-preco:"R$XX,99",
-img:"./assets/img/doril.jpg",
-alt:"Representação da caixa do medicamento Doril.",
-top: false
-},
-{
-nome:"Lisador",
-preco:"R$XX,15",
-img:"./assets/img/lisador.jpg",
-alt:"Representação da caixa do medicamento Lisador.",
-top: false
-},
-{
-nome:"Omeprazol",
-preco:"R$XX,50",
-img:"./assets/img/omeprazol.png",
-alt:"Representação da caixa do medicamento Omeprazol.",
-top: true
-},
-{
-nome:"Sonrisal",
-preco:"R$XX,99",
-img:"./assets/img/sonrisal.jpg",
-alt:"Representação da caixa do medicamento Sonrisal.",
-top: false
-}
-]
+import data from "../json/medicamentos.json" assert {type: "json"};
+import { addCarinho } from "./addCarrinho.js";
+import { addFavorito } from "./addFavorito.js";
+
+let medicamentos = data;
+
 
 const page = document.getElementsByTagName('title')[0];
 
@@ -58,6 +13,7 @@ medicamentos = medicamentos.filter((item) => item.top == true);
 
 let deckDiv = document.querySelector(".card-deck")
 
+//MONTAGEM DOS CARDS
 medicamentos.forEach((item) => {
 
   // Criação de variáveis
@@ -72,6 +28,7 @@ medicamentos.forEach((item) => {
 
   //div do card
   divCard.classList.add("card");
+  divCard.setAttribute("key", item.id)
 
   //Imagem do medicamento
   imgProduct.setAttribute("alt", item.alt);
@@ -97,7 +54,7 @@ medicamentos.forEach((item) => {
 
   //botão adicionar ao carrinho
   button.setAttribute("type", "button")
-  button.classList.add("btn", "btn-lg", "btn-success");
+  button.classList.add("btn", "btn-lg", "btn-success", "btn-adicionar");
   button.innerHTML = `<img src="assets/img/add_plus.svg" class="card-plus-sign" alt="Ícone do Adicionar ao carrinho" />` + " Adicionar";
 
   //montagem
@@ -109,4 +66,10 @@ medicamentos.forEach((item) => {
   divCard.appendChild(divIcon);
   divCard.appendChild(divAtt);
   deckDiv.appendChild(divCard);
+
+  //Botão Adicionar - Event Listener
+  button.addEventListener("click", function(){addCarinho(pTitle)})
+
+  //Botão Favoritar - Event Listener
+  divIcon.addEventListener("click", function(){addFavorito(pTitle)})
 })
