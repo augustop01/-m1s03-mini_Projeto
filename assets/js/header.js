@@ -1,5 +1,3 @@
-import { SwitchMode } from "./switchMode.js";
-
 // LOGO IMAGE
   let header = document.getElementsByTagName('header')[0];
   let logoAnchor = header.querySelector('#logo-anchor')

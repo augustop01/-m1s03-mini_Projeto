@@ -1,13 +1,9 @@
 const main = document.getElementsByTagName("main")[0];
 const footer = document.getElementsByTagName("footer")[0];
-const carBackground = document.querySelector(".carousel-container")
 const swtButton = document.createElement("button");
+
 const nav = document.querySelector(".menu");
-
-swtButton.addEventListener("click", SwitchMode);
-swtButton.classList.add("btn", "btn-switch")
-
-const darkMode = sessionStorage.getItem("darkMode");
+let darkMode = sessionStorage.getItem("darkMode");
 
 if(darkMode){
   main.classList.add("nm")
@@ -16,19 +12,25 @@ if(darkMode){
 }
 
 function SwitchMode() {
+  darkMode = sessionStorage.getItem("darkMode");
+
   if(darkMode){
+    sessionStorage.removeItem("darkMode", "true")
     main.classList.remove("nm");
     footer.classList.remove("nm");
     swtButton.classList.remove("b-nm")
-    sessionStorage.removeItem("darkMode")
     return
   }
+  sessionStorage.setItem("darkMode", "true")
   main.classList.add("nm")
   footer.classList.add("nm")
   swtButton.classList.add("b-nm")
-  sessionStorage.setItem("darkMode", "true")
-}
-
+  }
+  
+swtButton.classList.add("btn", "btn-switch")
+swtButton.addEventListener("click", SwitchMode);
 nav.appendChild(swtButton);
+
+
 
 export {SwitchMode};
