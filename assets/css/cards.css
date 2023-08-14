@@ -81,3 +81,31 @@
     font-size: 1.25rem;
     font-weight: bolder;
 }
+
+/* NIGHT MODE */
+
+.nm .card {
+    background-color: #33333e;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    border-color: #6c6c88;
+}
+
+.nm .card:hover {
+    background-color: rgba(33, 64, 61, 0.5);
+}
+
+.nm .card-title {
+    color: rgb(182, 255, 80);
+}
+
+.nm .card-text {
+    color: rgb(162, 162, 255);
+}
+
+.nm .card:hover .card-title {
+    color: rgb(255, 233, 63);
+}
+
+.nm .card:hover .card-text {
+    color: rgb(244, 218, 255);
+}

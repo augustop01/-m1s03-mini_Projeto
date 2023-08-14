@@ -28,3 +28,13 @@
 .rodape__copyright {
     padding: 1rem 0 ;
 }
+
+/* NIGHT MODE */
+
+.rodape.nm {
+    background-color: rgb(44, 66, 35);
+}
+
+.nm .rodape__map {
+    background-color: rgb(57, 83, 46);
+}

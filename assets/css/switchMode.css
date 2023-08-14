@@ -1,0 +1,37 @@
+.btn-switch {
+  background-color: rgb(59, 166, 59);
+  background-image: url(../img/moon-fill.svg);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 700;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+  box-shadow: 0 3px 2px rgb(27, 112, 27);
+  padding: 16px 16px;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.btn-switch:hover{
+  background-color: rgb(87, 170, 87);
+  scale: 1.1;
+}
+
+.btn-switch.btn:focus {
+  box-shadow: 0 3px 2px rgb(27, 112, 27);
+}
+
+.btn-switch.b-nm {
+  background-image: url(../img/sun-fill.svg);
+}
+
+.nm {
+  background-color: rgb(28, 27, 36);
+  color: rgb(219, 203, 241);
+}

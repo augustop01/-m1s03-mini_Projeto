@@ -68,3 +68,13 @@
     border-radius: 10px;
     margin: 2rem 0;
 }
+
+/* NIGHT MODE */
+
+.nm .carousel-container {
+    background-color: rgb(40, 38, 51);
+}
+
+.nm .card-list-container {
+    background-color: rgb(28, 27, 36);
+}

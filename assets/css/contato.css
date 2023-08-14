@@ -109,3 +109,44 @@ h1 {
     margin-top: 1.5rem;
     width: 10rem;
 }
+
+/* NIGHT MODE */
+
+.nm .form-container {
+    background-color: rgb(14, 13, 17);
+}
+
+.nm .form-control {  
+    background-color: rgb(30, 30, 38);
+    box-shadow: 0px 3px 1px rgba(224, 212, 255, 0.2);
+    color: rgb(175, 164, 196);
+}
+
+.nm .form-control:hover {
+    background-color: rgb(39, 39, 49);
+}
+
+.nm .form-control:focus {
+    border-style: none;
+    background-color: rgb(39, 39, 49);
+    color: white;
+}
+
+.nm .form-control::placeholder {
+    color: rgb(173, 173, 173);
+}
+
+.nm .form-control:focus::placeholder {
+    color: rgb(139, 188, 132);
+}
+
+.nm .select-input:checked {
+    color: rgb(123, 123, 123);
+}
+.nm .form-check {
+    color: rgb(109, 109, 109);
+}
+
+.nm .form-check-label:hover {
+    color: rgb(0, 149, 255);
+}

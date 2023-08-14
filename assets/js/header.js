@@ -1,3 +1,5 @@
+import { SwitchMode } from "./switchMode.js";
+
 // LOGO IMAGE
   let header = document.getElementsByTagName('header')[0];
   let logoAnchor = header.querySelector('#logo-anchor')
@@ -38,9 +40,6 @@ const navItems = [{
   path: "/contato.html"
 }]
 
-// ["INÍCIO", "TODOS OS REMÉDIOS", "SOBRE NÓS", "FALE CONOSCO"]; 
-
-
 let navBar = header.querySelector('.menu-nav');
 
 navItems.forEach((item) => {
@@ -54,4 +53,3 @@ navItems.forEach((item) => {
   navItem.appendChild(navAnchor);
   navBar.appendChild(navItem)
 })
-

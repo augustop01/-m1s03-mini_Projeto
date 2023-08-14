@@ -1,9 +1,10 @@
-body {
+.sobre {
     background: linear-gradient(rgb(255, 255, 255) 0%, rgb(196, 196, 196) 100%);
+    padding: 4.3rem 21rem 4rem 21rem;
 }
 
 .sobre__container {
-    margin: 4.3rem 21rem 0rem 21rem;
+    
 }
 
 .greet__container {
@@ -35,8 +36,6 @@ body {
 .social-media__container {
     display: flex;
     justify-content: center;
-    margin-top: 1.5rem;
-    margin-bottom: 4rem;
 }
 
 .social-media__container a {
@@ -71,4 +70,10 @@ body {
 .wpp_icon:active {
     color: rgb(3, 209, 0);
     scale: 1;
+}
+
+/* NIGHT MODE */
+
+.sobre.nm {
+    background: linear-gradient(rgb(41, 39, 53) 0%, rgb(16, 15, 20) 100%);
 }
